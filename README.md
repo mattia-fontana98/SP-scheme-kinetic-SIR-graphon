@@ -16,7 +16,7 @@ In this section, the user specifies the discretization in $(x, w)$, chooses the 
 
 In this section, the user selects the numerical options such as the quadrature rule for the Chang–Cooper weights through `scheme_w`, the time integration for the Fokker–Planck step via `scheme_t`, the initial condition `choice_IC`, and the functional forms of the graphon $\mathcal{B}$ and interaction functions $P$ and $G$ through `choice_B`, `choice_P`, and `choice_G`.
 
-The flags `choice_B`, `choice_P`, and `choice_G` select among several predefined model variants. The corresponding parameters $\xi, $r$, $\chi$, $a$ for the graphon and $P$, and $\delta$ for $G$ are kept inside the definition files; they can be modified directly in `compute_B.m`, `compute_P.m`, and `compute_G.m`.
+The flags `choice_B`, `choice_P`, and `choice_G` select among several predefined model variants. The corresponding parameters $\xi$, $r$, $\chi$, $a$ for the graphon and $P$, and $\delta$ for $G$ are kept inside the definition files; they can be modified directly in `compute_B.m`, `compute_P.m`, and `compute_G.m`.
 
 At the end of each run, `kineticSIR_main.m` automatically saves the full workspace to `Output_kineticSIR.mat`, which is used by the plotting script. In addition, the flag `save_data` controls whether a separate `.mat` file containing only the arrays `x`, `w`, `ftot_over_time`, and `time` is written to disk. Before running the SIR–Fokker–Planck simulation, the user must set `save_data = 1` if a subsequent popularity simulation is intended, as `popularity_main.m` loads this file as its input.
 
