@@ -28,7 +28,7 @@ The popularity model is not standalone, as it requires as input the output of a 
 
 In practice, the user should first enable the saving section in `kineticSIR_main.m`, so that the required arrays are written to disk. The popularity script then reads that saved dataset through a `load(...)` instruction. Therefore, the popularity dynamics is coupled to the previously computed SIR simulation and cannot be launched independently without such an input file.
 
-Within `popularity_main.m`, the user can modify the corresponding model parameters, namely the popularity drift and diffusion coefficients `mu` and `zeta`, the spread factor `theta`, the hypothesized danger level `w_hat`. The functional form of the interaction function p is selected through `choice_p` and must be coherent with the choice made in `kineticSIR_main.m`, while the parameters ξ, r and χ are kept inside the definition file; they can be modified in `compute_p.m`. The numerical options, similarly to those in `kineticSIR_main.m`, are controlled through `scheme_v` and `scheme_t`.
+Within `popularity_main.m`, the user can modify the corresponding model parameters, namely the popularity drift and diffusion coefficients `mu` and `zeta`, the spread factor `theta`, the hypothesized danger level `w_hat`. The functional form of the interaction propensity to interact p is selected through `choice_p` and must be coherent with the choice made in `kineticSIR_main.m`, while the parameters ξ, r and χ are kept inside the definition file; they can be modified in `compute_p.m`. The numerical options, similarly to those in `kineticSIR_main.m`, are controlled through `scheme_v` and `scheme_t`.
 
 ## Plotting
 
