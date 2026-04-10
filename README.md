@@ -10,11 +10,11 @@ The code was tested using MATLAB R2025b and requires no additional toolboxes.
 
 ## Model parameters
 
-In this section, the user specifies the discretization in *(x, w)*, chooses the number of time steps `Nt` and the relaxation time `tau`, the drift and diffusion coefficients of the opinion dynamics `lambda` and `sigma_S`, `sigma_I`, `sigma_R`, and the epidemiological coefficients `beta_contact`, `gamma_recovery` together with the exponent `alpha`.
+In this section, the user specifies the discretization in $(x, w)$, chooses the number of time steps `Nt` and the relaxation time `tau`, the drift and diffusion coefficients of the opinion dynamics `lambda` and `sigma_S`, `sigma_I`, `sigma_R`, and the epidemiological coefficients `beta_contact`, `gamma_recovery` together with the exponent `alpha`.
 
 ## Control parameters
 
-In this section, the user selects the numerical options such as the quadrature rule for the Chang–Cooper weights through `scheme_w`, the time integration for the Fokker–Planck step via `scheme_t`, the initial condition `choice_IC`, and the functional forms of the graphon *B* and interaction functions *P* and *G* through `choice_B`, `choice_P`, and `choice_G`.
+In this section, the user selects the numerical options such as the quadrature rule for the Chang–Cooper weights through `scheme_w`, the time integration for the Fokker–Planck step via `scheme_t`, the initial condition `choice_IC`, and the functional forms of the graphon \mathcal{B} and interaction functions *P* and *G* through `choice_B`, `choice_P`, and `choice_G`.
 
 The flags `choice_B`, `choice_P`, and `choice_G` select among several predefined model variants. The corresponding parameters *ξ*, *r*, *χ*, *a* for the graphon and *P*, and *δ* for *G* are kept inside the definition files; they can be modified directly in `compute_B.m`, `compute_P.m`, and `compute_G.m`.
 
