@@ -2,7 +2,7 @@
 
 **A. Bondesan, J. Borsotti, and M. Fontana**
 
-This document is a guide to the MATLAB code used to reproduce the numerical results presented in the article "Kinetic models of opinion-driven epidemic dynamics modulated by graphons" co-authored by A. Bondesan, J. Borsotti, and M. Fontana.
+This document is a guide to the MATLAB code used to reproduce the numerical results presented in the article "Kinetic models of opinion-driven epidemic dynamics modulated by graphons" co-authored by A. Bondesan, J. Borsotti, and M. Fontana (DOI: 10.48550/arXiv.2604.10614).
 
 The repository is organized around a main script and a set of functions. The main script `kineticSIR_main.m` sets parameters, initializes data, runs the time loop, and saves outputs. All simulation settings are controlled from the first two sections of the script, namely "Model parameters" and "Control parameters".
 
